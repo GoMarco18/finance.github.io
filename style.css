@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #f7931e, #ff6b6b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.dashboard {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.statistical-graph, .profit-margin, .cash-flow, .expenses, .debt-equity {
+    padding: 15px;
+    background-color: #fdf1e5;
+    border-radius: 8px;
+}
+
+.statistical-graph h2, .statistical-graph h3, .profit-margin h3, .cash-flow h3, .expenses h3, .debt-equity h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.graph, .bar-chart, .donut-chart {
+    margin-top: 15px;
+    height: 150px;
+    background-color: #f7c6a0;
+    border-radius: 5px;
+}
+
+.line-chart {
+    height: 100px;
+    background: #ffc1a1;
+    margin-bottom: 10px;
+}
+
+.monthly-revenue p {
+    margin-top: 5px;
+}
+
+.bar-chart .bar {
+    width: 100px;
+    height: 20px;
+    background-color: #333;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.operating {
+    background-color: #333;
+}
+
+.investing {
+    background-color: #ff6b6b;
+}
+
+.financing {
+    background-color: #f7931e;
+}
+
+.expenses ul, .debt-equity ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.expenses li, .debt-equity li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    font-weight: bold;
+}
